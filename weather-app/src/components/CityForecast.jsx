@@ -1,8 +1,8 @@
 // Component to display the forecast for the selected city. 
+// “selectedCity changed → useEffect should run → fetch mock data.
 
-// - CityForecast: “selectedCity changed → useEffect should run → fetch mock data.
 
-
+import { useEffect } from "react";
 import CityList from "./CityList";
 
 
@@ -15,6 +15,7 @@ function CityForecast(props) {
   return (
     <div>
       <h2>{props.selectedCity}</h2>
+      <p>Forecast loading...</p>
     </div>
   );
 }
