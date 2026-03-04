@@ -5,6 +5,7 @@
 
 import { useState } from 'react';
 import CityList from './components/CityList';
+import CityForecast from './components/CityForecast';
 import './App.css';
 
 const cities = ["NewYork", "London", "Tokyo"]
