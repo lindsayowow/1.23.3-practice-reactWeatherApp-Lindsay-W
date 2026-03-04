@@ -12,14 +12,13 @@ const cities = ["NewYork", "London", "Tokyo"]
 
 function App() {
 
-  const [city, setCity] = useState({
-        city: "",
-        weather: ""
-    });
+const [selectedCity, setSelectedCity] = useState("");
 
   return (
-    <>
-    </>
+    <div>
+    <CityList cities={cities} onSelectCity={setSelectedCity}/>
+    <CityForecast />
+    </div>
   )
 }
 
