@@ -9,14 +9,14 @@ import CityList from './components/CityList';
 import './App.css';
 
 const cities = ["NewYork", "London", "Tokyo"]
-const [city, setCity] = useState({
+
+function App() {
+
+  const [city, setCity] = useState({
         city: "",
         weather: ""
     });
 
-
-function App() {
-  
   return (
     <>
     </>
